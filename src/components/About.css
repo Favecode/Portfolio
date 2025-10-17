@@ -1,0 +1,24 @@
+.tech-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tech-icons h3 {
+  margin-bottom: 10px;
+  color: #ff6b3d;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* more space between icons */
+  font-size: 3rem; /* increased size */
+  color: #fff;
+}
+
+.icons svg:hover {
+  color: #ff6b3d;
+  transform: scale(1.3); /* slightly bigger hover effect */
+  transition: all 0.3s ease;
+}
+
