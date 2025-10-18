@@ -11,17 +11,17 @@ const Portfolio = () => {
     {
       title: "Designs",
       image: "/website3.png",
-      link: "https://www.behance.net/gallery/logo-designs",
+      link: "https://68f3d82d2e8a8739aed5e664--examsquestion.netlify.app/",
     },
     {
       title: "Portfolio Website",
       image: "/Website2.png",
-      link: "",
+      link: "https://sellcod.netlify.app/",
     },
     {
       title: "Wordpress",
       image: "/website4.png",
-      link: "https://www.dribbble.com/",
+      link: "http://localhost:517/",
     },
   
   ];

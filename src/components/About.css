@@ -11,7 +11,7 @@
 .icons {
   display: flex;
   justify-content: center;
-  gap: 30px; /* more space between icons */
+  gap: 20px; /* more space between icons */
   font-size: 3rem; /* increased size */
   color: #fff;
 }
