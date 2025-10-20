@@ -10,9 +10,9 @@ const Hero = () => {
     <section id="hero" className="hero">
       <div className="hero-text">
         <h1>
-          Hi, I’m <span>Onaolapo Favour</span>.
+          Hi, I’m <span>Frontend Developer</span>.
         </h1>
-        <p>Frontend Developer | WordPress Developer</p>
+       
         <p>
           I build responsive, user-friendly, and visually appealing web
           applications that help businesses and individuals stand out online.

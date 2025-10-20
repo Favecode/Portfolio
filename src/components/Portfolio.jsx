@@ -28,7 +28,7 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="portfolio">
-      <h2>Dev Fave</h2>
+      <h2>faveCode</h2>
       <div className="portfolio-grid">
         {works.map((work, i) => (
           <a

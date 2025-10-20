@@ -15,7 +15,7 @@ const Contact = () => {
 
         <div className="social-icons">
           <a
-            href="https://x.com/Taylordave24?t=Puut1XmNROlIzqtaMvPa9A&s=09"
+            href="https://x.com/faveCode?t=W-sdrG8BcnUK0gSWRI4JGQ&s=09"
             target="_blank"
             rel="noopener noreferrer"
             title="Twitter"

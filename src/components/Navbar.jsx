@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">FaveCode</div>
+      <div className="logo">faveCode</div>
       {/* Menu Icon */}
       <div className="menu-icon" onClick={toggleMenu}>
         {menuOpen ? <X size={28} /> : <Menu size={28} />}
