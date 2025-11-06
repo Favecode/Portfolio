@@ -1,9 +1,9 @@
-/* ===== BASE STYLES ===== */
+/* ===== BASE NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background: #000;
   color: white;
   padding: 1rem 2rem;
   position: fixed;
@@ -13,16 +13,72 @@
   z-index: 1000;
 }
 
+/* ===== Logo Styles ===== */
 .logo {
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  user-select: none;
+  transition: transform 0.3s ease;
 }
 
-/* Desktop Links */
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Black F with Orange Background ===== */
+.logo-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background: #ff6b3d; /* vibrant orange */
+  color: #000; /* black letter */
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-radius: 12px; /* square with smooth corners */
+  box-shadow: 0 4px 10px rgba(255, 122, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logo-symbol {
+  background: #ff6b3d;
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.5);
+}
+
+/* ===== Optional Text Next to Logo ===== */
+.logo-name {
+  font-size: 1.25rem;
+  color: #000;
+  letter-spacing: 0.5px;
+}
+
+.logo-name::first-letter {
+  color: #ff6b3d;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .logo-symbol {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .logo-name {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===== DESKTOP NAV LINKS ===== */
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
   list-style: none;
 }
 
@@ -37,35 +93,37 @@
   color: orange;
 }
 
-/* Hide menu icon by default */
+/* ===== MENU ICON ===== */
 .menu-icon {
   display: none;
+  color: white;
   cursor: pointer;
+  z-index: 1100;
 }
 
-/* ===== 📱 MOBILE STYLES ===== */
+/* ===== MOBILE STYLES ===== */
 @media (max-width: 768px) {
   .menu-icon {
-    display: none;
+    display: block;
   }
 
   .nav-links {
     position: fixed;
     top: 70px;
-    right: 100%;
-    background: #222;
-    width: 220px;
+    right: -100%;
+    background: #111;
+    width: 250px;
     height: calc(100vh - 70px);
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
     padding: 2rem 1.5rem;
-    list-style: none;
+    gap: 1.5rem;
     transition: right 0.3s ease;
+    list-style: none;
   }
 
   .nav-links.active {
-    right: 0; /* slide in */
+    right: 0; /* Slide in */
   }
 
   .nav-links li a {
@@ -77,5 +135,4 @@
   .nav-links li a:hover {
     color: orange;
   }
-
 }

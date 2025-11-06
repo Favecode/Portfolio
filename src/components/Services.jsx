@@ -25,6 +25,10 @@ const Services = () => {
   return (
     <section id="services" className="services">
       <h2 className="services-title">My Services</h2>
+      <p className="services-subtitle">
+        Here are the areas I specialize in — blending design, development, and technology.
+      </p>
+
       <div className="services-container">
         {data.map((item, index) => (
           <div

@@ -6,15 +6,18 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
-  const handleLinkClick = () => {
-    setMenuOpen(false); // closes menu after clicking a link
-  };
+  const handleLinkClick = () => setMenuOpen(false);
 
   return (
     <nav className="navbar">
-      <div className="logo">faveCode</div>
-      {/* Menu Icon */}
+      {/* Left: Logo */}
+     <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+  <span className="logo-symbol">F</span>
+ 
+</div>
+
+
+      {/* Menu Icon (Mobile) */}
       <div className="menu-icon" onClick={toggleMenu}>
         {menuOpen ? <X size={28} /> : <Menu size={28} />}
       </div>

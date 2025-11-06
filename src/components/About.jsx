@@ -16,16 +16,6 @@ const About = () => {
           I work with APIs, manage code with Git/GitHub, and ensure smooth, efficient development workflows. With every project, I strive to deliver clean, maintainable, and high-quality solutions 
           that create real impact while continuously improving my skills to achieve greater results.
         </p>
-        <div className="tech-icons">
-          <h3>Technologies I Work With:</h3>
-          <div className="icons">
-            <FaReact title="React" size={50} />
-            <FaVuejs title="Vue.js" size={50} />
-            <FaHtml5 title="HTML5" size={50} />
-            <FaCss3Alt title="CSS3" size={50} />
-            <FaJsSquare title="JavaScript" size={50} />
-          </div>
-        </div>
         <button 
           className="cv-btn" 
           onClick={() => window.open("/FaveCV.pdf", "_blank")}

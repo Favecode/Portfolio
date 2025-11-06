@@ -20,15 +20,15 @@ const Portfolio = () => {
     },
     {
       title: "Wordpress",
-      image: "/website4.png",
-      link: "http://localhost:517/",
+      image: "/website4.jpg",
+      link: "https://68f8cf3c3079e50008c3b963--author123.netlify.app/",
     },
   
   ];
 
   return (
     <section id="portfolio" className="portfolio">
-      <h2>faveCode</h2>
+      <h2>Portfolio</h2>
       <div className="portfolio-grid">
         {works.map((work, i) => (
           <a
