@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Menu, X } from "lucide-react";
 
-function Navbar() {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -10,12 +10,13 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* Left: Logo */}
-     <div className="logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-  <span className="logo-symbol">F</span>
- 
-</div>
-
+      {/* Logo */}
+      <div
+        className="logo"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <span className="logo-symbol">F</span>
+      </div>
 
       {/* Menu Icon (Mobile) */}
       <div className="menu-icon" onClick={toggleMenu}>
@@ -33,5 +34,3 @@ function Navbar() {
     </nav>
   );
 }
-
-export default Navbar;

@@ -1,3 +1,4 @@
+
 /* ===== BASE NAVBAR ===== */
 .navbar {
   display: flex;
@@ -107,32 +108,59 @@
     display: block;
   }
 
+  /* Hide menu initially */
   .nav-links {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    background: #111;
-    width: 250px;
-    height: calc(100vh - 70px);
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem 1.5rem;
-    gap: 1.5rem;
-    transition: right 0.3s ease;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
     list-style: none;
+    gap: 1.2rem;
+    text-align: center;
+    animation: fadeOut 0.3s ease forwards;
   }
 
+  /* Show when active */
   .nav-links.active {
-    right: 0; /* Slide in */
+    display: flex;
+    animation: fadeIn 0.4s ease forwards;
   }
 
   .nav-links li a {
     width: 100%;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #333;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    transition: color 0.3s ease;
   }
 
   .nav-links li a:hover {
     color: orange;
+  }
+
+  /* Smooth fade animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 }
